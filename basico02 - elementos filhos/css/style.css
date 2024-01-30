@@ -1,0 +1,69 @@
+body{
+    padding-bottom: 500px;
+}
+
+/*container pai*/
+.container{
+    display: flex;
+    max-width: 300px;
+    height: 300px;
+    padding: 15px;
+    background-color: #eee;
+    border: 2px solid red;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item{
+    height: 50px;
+    width: 50px;
+    background-color: #ccc;
+    border: 2px solid blue;
+}
+
+/*segundo estilo espaço em volta*/
+.container2{
+    display: flex;
+    max-width: 300px;
+    height: 300px;
+    padding: 15px;
+    background-color: #eee;
+    border: 2px solid red;
+
+    justify-content: space-around;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: #ccc;
+    border: 2px solid blue;
+    flex-basis: 30px; /*tamanho minímo do elemento*/
+}
+
+#bx-1{
+    flex-grow: 2; /*usando o grow para controlar como cresce o elemento (2=dobro)*/
+}
+
+#bx-2,
+#bx-3{
+    flex-grow: 1;
+}
+
+/*se alterarmos o 'basis' do elemento:*/
+#bx-2{
+    flex-basis: 100px;
+}
+
+/*usando o shrink para alterar o valor da proporção que o elemento diminui*/
+#bx-3{
+    flex-shrink: 2;
+}
+
+/*
+Podemos utilizar uma forma mais curta para aplicar todas essas propriedades:
+  → shorthand para item;
+
+  flex: 1(para o grow) 1(para o shrink) 50px(para o basis);
+*/

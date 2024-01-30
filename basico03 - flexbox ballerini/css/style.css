@@ -1,0 +1,52 @@
+.container{
+    width: 500px;
+    height: 300px;
+    border: 2px solid red;
+    background-color: bisque;
+    display: flex;
+
+    justify-content: space-evenly; /*espaçamento igual entre os itens e o container*/
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.bx1{
+    background: lightcoral;
+}
+
+.bx2{
+    background: lightblue;
+}
+
+.bx3{
+    background: lightgreen;
+}
+
+.container1{
+    width: 500px;
+    height: 300px;
+    border: 2px solid red;
+    background-color: bisque;
+    display: flex;
+
+    justify-content: center; /*centraliza na horizontal*/
+
+    align-items: center; /*centraliza na vertical*/
+}
+
+.container2{
+    width: 500px;
+    height: 300px;
+    border: 2px solid red;
+    background-color: bisque;
+    display: flex;
+
+    justify-content: space-evenly; /*espaçamento igual entre os itens e o container*/
+}
