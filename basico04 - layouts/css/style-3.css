@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+}
+
+header, nav, main, aside, footer{
+    background: #a1a1a1;
+    display: flex;
+    margin: 3px;
+}
+
+header{
+    flex: 1 1 100vw;
+    height: 100px;
+}
+
+/*formatação do logo*/
+header #logo{
+    flex: 0 1 100px;
+    background: #c9c9c9;
+}
+
+nav{
+    flex: 1 1 100vw;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*formatação do botão hamburger do menu*/
+#open-menu, #close-menu{
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*formatação padrão dos links*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a{
+    margin: 3%;
+    font-size: 20pt;
+}
+
+main{
+    flex: 20 1 500px;
+    height: calc(100vh - 224px);
+}
+
+aside{
+    flex: 1 1 200px;
+}
+
+footer{
+    flex: 1 1 100vw;
+    height: 100px;
+}
+
+/*responsividade sem barra de rolagem*/
+@media only screen and (max-width: 923px){
+    main{
+        height: calc(100vh - 330px);
+    }
+
+    aside{
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+}
+
+/*menu hamburguer*/
+@media only screen and (max-width: 717px){
+    #open-menu, #close-menu{
+        display: block;
+    }
+
+    #open-menu{
+        margin-left: auto;
+    }
+
+    #close-menu{
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+}
