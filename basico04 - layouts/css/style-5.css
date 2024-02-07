@@ -1,0 +1,56 @@
+/*estilizando o layout 5*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f8f1e6;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#container{
+    width: 980px;
+    margin: 0 auto;
+}
+
+#cabecalho{
+    width: 980px;
+    height: 140px;
+    background: #176817;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#principal{
+    width: 980px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+#navegacao{
+    width: 270px;
+    height: 450px;
+    background: #aef8ae;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+}
+
+#conteudo{
+    width: 690px;
+    height: 450px;
+    background: #aef8ae;
+    text-align: center;
+}
+
+#rodape{
+    width: 980px;
+    height: 70px;
+    background: #176817;
+    margin-top: 15px;
+    text-align: center;
+}
